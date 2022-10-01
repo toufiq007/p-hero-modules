@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banking Details page</title>
+  <!-- bootstrap cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+
+  <header>
+    <h2 class="text-center mt-5 fs-1">Here is the bank details of your account</h2>
+  </header>
+
+  <!-- Bank details -->
+  <main class="my-5">
+    <div class="container">
+      <div class="row gx-5">
+        <div class="col bg-danger p-4 text-light me-4 rounded">
+          <h3>Deposite</h3>
+          <h2>$<span id="previousDepositeAmmount">00</span></h2>
+        </div>
+        <div class="col bg-warning p-4 text-light me-4 rounded">
+          <h3>widthdraw</h3>
+          <h2>$<span id="previouswidthdrawAmmount">00</span></h2>
+        </div>
+        <div class="col bg-info p-4 text-light rounded">
+          <h3>Current Balance</h3>
+          <h2>$<span id="previousMainAmmount">1000</span></h2>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <!-- Yours form -->
+
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col bg-secondary p-4 me-4">
+          <h3 class="mb-4">Your deposite ammount</h3>
+          <div class="mb-3">
+            <input type="number" id="depositeInput" placeholder="enter your ammount" class="form-control">
+          </div>
+          <button class="btn btn-success" id="depositeButton">Update deposite</button>
+        </div>
+        <div class="col bg-secondary p-4" style="background: coral !important;">
+          <h3 class="mb-4">Your widthdraw ammount</h3>
+          <div class="mb-3">
+            <input type="number" id="widthDrawInput" placeholder="enter your ammount" class="form-control">
+          </div>
+          <button class="btn btn-danger" id="widthdrawButton">Update widthdraw</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+  <!-- main js -->
+  <!-- <script src="js/banking2.js"></script> -->
+  <script src="js/functionalBank.js"></script>
+  <!-- bootstrap script cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
