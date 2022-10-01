@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>our simple bank system</title>
+    <style>
+        .first-section{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            width: 70%;
+            margin: auto;
+            /* background: violet; */
+            padding: 50px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .first-section #deposite{
+            background: lightgreen;
+            width: 70%;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .first-section #withdraw{
+            background: coral;
+            width: 70%;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .first-section #balance{
+            background: lightseagreen;
+            width: 70%;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .second-section{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            width: 70%;
+            margin: auto;
+            /* background: violet; */
+            padding: 50px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .second-section #deposite-section{
+            background: violet;
+            width: 70%;
+            padding: 50px;
+            border-radius: 20px;
+        }
+        .second-section #withdraw-section{
+            background: lightpink;
+            width: 70%;
+            padding: 50px;
+            border-radius: 20px;
+        }
+        #depositeDrawInput, #withDrawInput{
+            display: block;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>let get some moneyyyyyyyyyyyyyyyy</h2>
+    <section>
+        <div class="first-section">
+            <div id="deposite">
+                <h3>Deposite</h3>
+                <p>$ <span id="previousDepositeAmmount">00</span></p>
+            </div>
+            
+            <div id="withdraw">
+                <h3>Withdraw</h3>
+                <p>$ <span id="previousWithdrawAmmount">00</span></p>
+            </div>
+            <div id="balance">
+                <h3>Balance</h3>
+                <p>$ <span id="mainBalance">1200</span></p>
+            </div>
+
+        </div>
+        <div class="second-section">
+            <div id="deposite-section">
+                <h2>please deposite here</h2>
+                <input id="depositeDrawInput" type="text" placeholder="$ ammount you want to deposite">
+                <button id="depositeBtn">Deposite</button>
+            </div>
+            
+            <div id="withdraw-section">
+                <h2>please withdraw here</h2>
+                <input id="withDrawInput" type="text" placeholder="$ ammount you want to withdraw">
+                <button id="withdrawBtn">Withdraw</button>
+            </div>
+
+        </div>
+    </section>
+    <script src="bank.js"></script>
+</body>
+</html>
